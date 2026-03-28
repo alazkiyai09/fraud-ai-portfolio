@@ -1,0 +1,20 @@
+services:
+  fraudshield-rag:
+    image: ghcr.io/alazkiyai09/fraudshield-rag:latest
+    ports:
+      - "8000:8000"
+
+  medicaidguard-deploy:
+    image: ghcr.io/alazkiyai09/medicaidguard-deploy:latest
+    ports:
+      - "8002:8000"
+
+  fraud-agent-monitor:
+    image: ghcr.io/alazkiyai09/fraud-agent-monitor:latest
+    ports:
+      - "8001:8001"
+
+  fraud-llm-finetune:
+    image: ghcr.io/alazkiyai09/fraud-llm-finetune:latest
+    ports:
+      - "7860:7860"
